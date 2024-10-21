@@ -1,18 +1,18 @@
 # TODO Найдите количество книг, которое можно разместить на дискете
-pages = 100
-lines = 50
-symbols = 25
-codes = 4
+Pages = 100
+Lines = 50
+Symbols = 25
+Codes = 4
 # Сколько байтов в 1 книге
-bytes_in_symbols = codes * symbols
-bytes_in_lines = lines * bytes_in_symbols
-bytes_in_pages = pages * bytes_in_lines
+bytes_in_symbols = Codes * Symbols
+bytes_in_lines = Lines * bytes_in_symbols
+bytes_in_pages = Pages * bytes_in_lines
 
 # Перевести мегабайты в байты
-mb = 1.44
-kb = 1024
-byte = 1024
-sum_of_bytes = mb * kb * byte
+Mb = 1.44
+Kb = 1024
+Byte = 1024
+sum_of_bytes = Mb * Kb * Byte
 # Находим количество книг
 books = sum_of_bytes / bytes_in_pages
 print("Количество книг, помещающихся на дискету:", round(books))
